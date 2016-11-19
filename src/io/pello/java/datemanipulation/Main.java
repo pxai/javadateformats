@@ -21,7 +21,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
-		String sampleDate = "2016-10-09T00:00:00+0200"; // ISO8601 format: https://en.wikipedia.org/wiki/ISO_8601
+		String isoSampleDate = "2016-10-09T00:00:00.200Z"; // ISO8601 format: https://en.wikipedia.org/wiki/ISO_8601
 		
         DateFormat shortFormat= new SimpleDateFormat("MM/dd/yyyy"); 
         DateFormat longFormat= new SimpleDateFormat(); // "yyyy-MM-dd HH:mm:ss"
@@ -41,7 +41,7 @@ public class Main {
 			Date shortDate = shortFormat.parse(line);	
 			System.out.println("Ok, date parsed: " + shortDate.toString());
 			
-        	Date longDate = longFormat.parse(sampleDate);
+        	Date longDate = isoFormat.parse(isoSampleDate);
 			System.out.println("Ok, long date parsed: " + longDate.toString());
 			
 		} catch (ParseException e) {
