@@ -21,6 +21,10 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);
+		// Mysql : yyyy-MM-dd'T'HH:mm:ssZ
+		// 2017-01-21T08:18:13+0100
+		
+		// For Js:
 		String isoSampleDate = "2016-10-09T00:00:00.200Z"; // ISO8601 format: https://en.wikipedia.org/wiki/ISO_8601
 		
         DateFormat shortFormat= new SimpleDateFormat("MM/dd/yyyy"); 
